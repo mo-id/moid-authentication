@@ -2,12 +2,12 @@ import React from "react";
 import { render, waitFor, act } from "@testing-library/react";
 
 import { Nullable, SimpleHandler } from "@mo-id/typescript-toolbelt";
+import { BaseSession } from "../../types";
 import {
   AuthenticationProvider,
   IAuthenticationContext,
 } from "../AuthenticationContext";
 import { useAuthentication } from "../hooks";
-import { BaseSession } from "../utils";
 import { createSession } from "../test-utils";
 
 const mockInterceptors = {

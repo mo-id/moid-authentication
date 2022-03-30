@@ -2,9 +2,9 @@ import { useCallback, useMemo, useState } from "react";
 import Axios from "axios";
 
 import { Nullable, SimpleHandler } from "@mo-id/typescript-toolbelt";
+import { BaseSession } from "../../types";
 import {
   authenticateClientRequests,
-  BaseSession,
   interceptUnauthorizedResponses,
 } from "../utils";
 

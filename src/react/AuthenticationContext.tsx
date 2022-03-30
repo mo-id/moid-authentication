@@ -7,8 +7,8 @@ import React, {
 } from "react";
 
 import { Nullable, Optional, SimpleHandler } from "@mo-id/typescript-toolbelt";
+import { BaseSession, WithChildren } from "../types";
 import { useAxiosInterceptors } from "./hooks";
-import { BaseSession, WithChildren } from "./utils";
 
 interface IAuthenticationHandlers<Session extends BaseSession<User>, User> {
   signIn: (email: string, password: string) => Promise<Nullable<Session>>;

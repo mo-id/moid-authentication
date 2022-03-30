@@ -1,5 +1,5 @@
 import { Optional } from "@mo-id/typescript-toolbelt";
-import { BaseSession } from "../utils";
+import { BaseSession } from "../../types";
 
 export function createSession(
   overrides?: Optional<BaseSession<unknown>>

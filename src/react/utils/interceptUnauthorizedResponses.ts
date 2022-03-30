@@ -1,7 +1,7 @@
 import { AxiosError, AxiosResponse } from "axios";
 
 import { Optional, SimpleHandler } from "@mo-id/typescript-toolbelt";
-import { StatusCode } from "./types";
+import { StatusCode } from "../../types";
 
 type InterceptUnauthorizedResponses = [
   (response: AxiosResponse) => AxiosResponse,

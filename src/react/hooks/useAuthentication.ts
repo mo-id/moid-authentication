@@ -1,11 +1,12 @@
 import { useContext } from "react";
+
+import { BaseSession } from "../../types";
 import {
   Anonymous,
   AuthenticationContext,
   AuthenticationState,
   IAuthenticationContext,
 } from "../AuthenticationContext";
-import { BaseSession } from "../utils";
 
 export function useAuthentication<
   Session extends BaseSession<User>,
